@@ -57,8 +57,8 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
                 else:
                     sentence.append(actions[np.argmax(res)])
 
-            if len(sentence) > 5:
-                sentence = sentence[-5:]
+            if len(sentence) > 6:
+                sentence = sentence[-6:]
 
             #image = prob_viz(res, actions, image, colors)
 
