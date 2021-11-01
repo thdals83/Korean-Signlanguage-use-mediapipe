@@ -12,7 +12,7 @@ fourcc = cv2.VideoWriter_fourcc(*'DIVX')
 
 with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
     for action in actions:
-        for sequence in range(100,200):
+        for sequence in range(200):
             #path = 'C:/Users/user/Desktop/졸업작품/3차 영상/' + action + '/' + str(sequence) +'.avi'
             #print(path)
             #out = cv2.VideoWriter(path, fourcc, 30, (1280, 720))
