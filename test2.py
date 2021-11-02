@@ -48,7 +48,6 @@ cfm = confusion_matrix(np.argmax(y_test,axis=1), np.argmax(yhat, axis=1))
 np.set_printoptions(precision=2)
 plt.figure(figsize=(20,10))
 plt.rc('font', family='Malgun Gothic')
-#class_names = ['기절', '동전' ,'복통', '붕대', '소방관', '손목', '약사', '연기', '운동장', '의사', '출산','칼', '토하다', '트럭', '팔']
 
 plot_confusion_matrix(cfm, classes=actions, title='Confusion Matrix on Test data')
 plt.show()

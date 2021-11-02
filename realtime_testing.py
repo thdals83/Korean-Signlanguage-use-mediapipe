@@ -70,12 +70,8 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
         draw.text((10, 50), mean, font=ImageFont.truetype(fontpath, 40), fill=(b, g, r, a))
         draw.text((1200, 30), str(len(sequence)), font=ImageFont.truetype(fontpath, 40), fill=(b, g, r, a))
         image = np.array(img_pil)
-        # draw.ellipse((520, 0, 570, 40), fill=(0, 0, 0), outline='blue', width=1)
-        #cv2.rectangle(image, (0, 0), (400, 50), (0, 0, 0), -1)
-        #cv2.rectangle(image, (1000, 20), (1100, 60), (0, 0, 0), -1)
-        #cv2.rectangle(image, (1000,20), (1100, 60), (0, 0, 0), -1)
-        #cv2.putText(image, ' '.join(sentence), (5,90), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
-        cv2.imshow('Action_Recognition', image)
+
+        cv2.imshow('Korean Sign-language', image)
 
         if cv2.waitKey(10) & 0xFF == ord('q'):
             break
