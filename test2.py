@@ -39,7 +39,7 @@ def plot_confusion_matrix(cm, classes,
     plt.ylabel('True label', fontsize=25)
     plt.xlabel('Predicted label', fontsize=25)
 
-new_model = tf.keras.models.load_model('lstm_model.h5')
+new_model = tf.keras.models.load_model('lstm_model2.h5')
 xhat = X_test
 yhat = new_model.predict(xhat)
 

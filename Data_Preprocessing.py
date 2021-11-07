@@ -6,7 +6,6 @@ print(classes)
 sequences, labels = [], []
 for action in actions:
     for sequence in range(number_sequences):
-
         window = []
         for frame_num in range(sequence_length):
             res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.npy".format(frame_num)))
