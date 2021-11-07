@@ -14,12 +14,8 @@ for action in actions:
         labels.append(classes[action])
 
 print(np.array(sequences).shape)
-# X and y variables
 X = np.array(sequences)
-#np.random.shuffle(X)
 y= to_categorical(labels).astype(int)
-#np.random.shuffle(y)
-# train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y)
 print(X_train.shape)
 print(X_test.shape)
