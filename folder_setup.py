@@ -17,8 +17,7 @@ for action in actions:
 DATA_PATH = os.path.join('Feature_Extraction2')
 
 actions = np.array(['사람이 갑자기 쓰러졌어요','119 구조대를 불러주세요','112에 신고해주세요'])
-#actions = np.array(['112에 신고해주세요'])
-#actions = np.array(['도와주세요','구해주세요'])
+
 number_sequences = 200
 sequence_length = 50
 
